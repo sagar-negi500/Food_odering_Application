@@ -30,8 +30,8 @@ useEffect(()=>{
 
   return (
     <>
-    <Provider  store={appStore}>
-   <userContext.Provider   value={{loggedinuser:userName ,setuserName}}>
+    <Provider  basename="/Food_odering_Application" store={appStore}>
+   <userContext.Provider value={{loggedinuser:userName ,setuserName}}>
       <Header />
       <Outlet/>
       </userContext.Provider>
