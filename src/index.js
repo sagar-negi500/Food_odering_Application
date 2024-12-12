@@ -43,11 +43,11 @@ useEffect(()=>{
 
 const router =createBrowserRouter([
   {
-    path:"/",
+    path:"/Food_odering_Application",
     element:<AppLayout/>,
     children:[
       {
-        path:"/",
+        path:"",
         element:<Body/>
       },
       {

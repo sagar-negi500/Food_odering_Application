@@ -68,11 +68,11 @@ const Body = () => {
               );
               setFilteredRestaurant(newlist);
             }}
-            className="p-4 bg-slate-600  mt-4 ml-4 rounded-lg"
+            className="p-4 bg-slate-600  mt-4  mr-4 ml-4 rounded-lg"
           >
             filter
           </button>
-            <label>name</label>
+            <labe className ="mr-2">name :</labe>
         <input value={loggedinuser} onChange={(e)=>{
           setuserName(e.target.value)
 
