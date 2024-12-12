@@ -30,7 +30,7 @@ useEffect(()=>{
 
   return (
     <>
-    <Provider  basename="/Food_odering_Application" store={appStore}>
+    <Provider   store={appStore}>
    <userContext.Provider value={{loggedinuser:userName ,setuserName}}>
       <Header />
       <Outlet/>
@@ -71,4 +71,4 @@ const router =createBrowserRouter([
  
 ])
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render( <RouterProvider router={router} />);
+root.render( <RouterProvider router={router} basename="/Food_odering_Application" />);
