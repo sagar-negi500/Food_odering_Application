@@ -2990,6 +2990,7 @@ const AppLayout = ()=>{
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
+            basename: "/Food_odering_Application",
             store: (0, _appStoreDefault.default),
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
                 value: {
