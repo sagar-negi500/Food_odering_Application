@@ -3024,7 +3024,7 @@ _s(AppLayout, "YuulRzOk40Ppxy0KX+HADyHQUzE=");
 _c = AppLayout;
 const router = (0, _reactRouterDom.createBrowserRouter)([
     {
-        path: "/",
+        path: "/Food_odering_Application",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/index.js",
             lineNumber: 47,
@@ -3032,7 +3032,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         }, undefined),
         children: [
             {
-                path: "/",
+                path: "",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/index.js",
                     lineNumber: 51,
@@ -40196,15 +40196,16 @@ const Body = ()=>{
                                     const newlist = listOfRestaurant.filter((list)=>list.info.name.toLowerCase().includes(name.toLowerCase()));
                                     setFilteredRestaurant(newlist);
                                 },
-                                className: "p-4 bg-slate-600  mt-4 ml-4 rounded-lg",
+                                className: "p-4 bg-slate-600  mt-4  mr-4 ml-4 rounded-lg",
                                 children: "filter"
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
                                 lineNumber: 63,
                                 columnNumber: 11
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                children: "name"
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("labe", {
+                                className: "mr-2",
+                                children: "name :"
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
                                 lineNumber: 75,

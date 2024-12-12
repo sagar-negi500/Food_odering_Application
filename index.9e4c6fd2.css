@@ -310,6 +310,14 @@ img, video {
   margin-top: 1rem;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-2 {
+  margin-right: .5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -405,6 +413,18 @@ img, video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-center {
