@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { addItem } from '../utils/cartSlice';
 
 const ItemCards = ({ items }) => {
-  console.log(items); // Logs the items array to inspect its structure
+  console.log(items,"items"); // Logs the items array to inspect its structure
 
   const dispatch = useDispatch();
   const addCard =(item)=>{

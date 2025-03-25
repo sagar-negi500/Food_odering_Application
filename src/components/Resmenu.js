@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import {useResmenu} from '../utils/useResmenu'
 import ResList from './ResList';
 
+
 const Resmenu = () => {
 const {resid}=useParams();
 const [showIndex,setshowIndex]=useState(null);

@@ -27,7 +27,9 @@ const Body = () => {
       // "https://www.swiggy.com/mapi/homepage/getCards?lat=19.0759837&lng=72.8776559"
       // "https://www.swiggy.com/mapi/homepage/getCards?lat=19.2553945&lng=72.86086750000001"
       // "https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.2553945&lng=72.86086750000001"
-     " https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0759837&lng=72.8776559"
+     
+     " https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0759837&lng=72.8776559",
+    
     );
     const json = await data.json();
 
@@ -37,18 +39,18 @@ const Body = () => {
     //     ?.restaurants
     // );
 
-    console.log(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+    console.log(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
       ?.restaurants)
 
     setListOfRestaurant(
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
 
-    setFilteredRestaurant( json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+    setFilteredRestaurant( json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
       ?.restaurants)
   };
-  return filteredRestaurant.length === 0 ? (
+  return  (filteredRestaurant?.length ?? 0) === 0 ? (
     <Shimmer />
   ) : (
     <>
